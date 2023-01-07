@@ -2,13 +2,12 @@ body{
   font-family:Arial, Helvetica, sans-serif
 }
 
-.para,
-.small-para {
+.para, .small-para { /* to style both 1st and 2nd paragraph element */
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para { /* to style only the 2nd paragraph element */
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +16,9 @@ body{
   font-size: 22px;
 }
 
-.confirm {
+.button.confirm { /*We can also use the ID selector of the element - #confirm button*/
+
+  /* to style the confirm button */
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +30,9 @@ body{
   font-size: 20px;
 }
 
-.child {
+.text.child { /*We can also use the descendant combinator - .text .child */
+
+  /* to style the child div of the 2nd div element */
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
